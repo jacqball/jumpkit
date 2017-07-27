@@ -21,7 +21,7 @@ au BufRead,BufNewFile *.otl set filetype=english
 " make current line easier to see
 :set cursorline
 
-:hi CursorLine   cterm=NONE ctermbg=darkgray guibg=#333333
+:hi CursorLine   cterm=BOLD ctermbg=darkgray gui=BOLD guibg=#333333
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 " NOTE \c swaps between column and line highlight
