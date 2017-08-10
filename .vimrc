@@ -25,3 +25,6 @@ au BufRead,BufNewFile *.otl set filetype=english
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 " NOTE \c swaps between column and line highlight
+
+" smaller indent for html
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
