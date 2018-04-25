@@ -13,6 +13,7 @@ set fmr=?>,<?
 set nu
 
 autocmd BufEnter *.php setlocal indentexpr=
+iab xdate <c-r>=strftime("%Y/%m/%d %H:%M")<cr>
 
 " use my silly English syntax highlighting
 au BufRead,BufNewFile *.txt set filetype=english
